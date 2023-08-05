@@ -1,4 +1,4 @@
-print("Projeto de Webscraping")
+print("Projeto de Webscraping Bolsa de Valores")
 import yfinance as yf
 import pandas as pd
 import datetime
