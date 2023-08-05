@@ -84,11 +84,14 @@ import imghdr
 smtp_server = ("smtp.gmail.com")
 smtp_port = 587
 
-username = ("owayran1998@gmail.com")
+#em username utilize o email que será utilizado para envio, neste caso, gmail
+username = ("emailexemplo@gmail.com")
 password = os.environ.get("password")
 
 from_email = (username)
-to_email = ("owayran1998@gmail.com")
+
+#aqui, selecione o destinatário a receber o email.
+to_email = ("exemplo@gmail.com")
 
 msg = MIMEMultipart()
 msg['From'] = from_email
@@ -116,7 +119,7 @@ Abs,
 msg.attach(MIMEText(body, 'plain'))
 
 #Selecionar o diretório onde foram salvas as imagens dos gráficos.
-image_path = (r"C:\Users\owayr\OneDrive\Área de Trabalho\PYTHON UNIVALE\images")
+image_path = (r"COPIE E COLE O DIRETÓRIO AQUI, SALVAR AS IMAGENS EM UMA PASTA SEPARADA APENAS PARA ELAS")
 for filename in os.listdir(image_path):
     with open(os.path.join(image_path, filename), 'rb') as f:
         img_data = f.read()
