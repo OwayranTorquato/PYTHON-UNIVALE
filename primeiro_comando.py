@@ -1,9 +1,14 @@
-name = "Owayran Torquato"
-Age = "24 Anos"
-Born = "03/09/1998"
-text = "Primeiros comandos em python"
+nome = "Owayran"
+sobrenome = "Torquato Fernandes da Silva"
+idade = 24
+altura = 1.84
+peso = "93kg"
+maior_idade = "Sim"
 
-print (name)
-print (Age)
-print (Born)
-print (text)
+print (nome)
+print (sobrenome)
+print (idade)
+print (altura)
+print (peso)
+print(maior_idade)
+
