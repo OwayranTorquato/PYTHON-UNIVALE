@@ -40,9 +40,11 @@ root.title("Calculadora")
 
 operacao = tk.IntVar()
 
+# Sendo 'label' um widget para exibir textos ou imagens de maneira estáticas em uma janela
 label_operacao = tk.Label(root, text="Escolha a operação:")
 label_operacao.pack()
 
+# Sendo 'radio' que permite ao usuário escolher um botão entre vários outros na tela
 radio_adicao = tk.Radiobutton(root, text="Adição", variable=operacao, value=1)
 radio_adicao.pack()
 
@@ -55,23 +57,31 @@ radio_multiplicacao.pack()
 radio_divisao = tk.Radiobutton(root, text="Divisão", variable=operacao, value=4)
 radio_divisao.pack()
 
+# Sendo 'label' um widget para exibir textos ou imagens de maneira estáticas em uma janela
 label_num1 = tk.Label(root, text="Digite o primeiro número:")
 label_num1.pack()
 
+# Sendo 'entry' que permite receber dados do usuário
 entry_num1 = tk.Entry(root)
 entry_num1.pack()
 
+# Sendo 'label' um widget para exibir textos ou imagens de maneira estáticas em uma janela
 label_num2 = tk.Label(root, text="Digite o segundo número:")
 label_num2.pack()
 
+# Sendo 'entry' que permite receber dados do usuário
 entry_num2 = tk.Entry(root)
 entry_num2.pack()
 
+# Sendo 'calcular_button' o botão inserido na tela para calcular os números inseridos
 calcular_button = tk.Button(root, text="Calcular", command=calcular)
 calcular_button.pack()
-
 resultado = tk.StringVar()
+
+# Sendo 'label' um widget para exibir textos ou imagens de maneira estáticas em uma janela
 label_resultado = tk.Label(root, textvariable=resultado)
 label_resultado.pack()
 
+# Sendo 'mainloop' definido para permitir o inicio do loop dos eventos da interface gráfica,
+#se atualizando a cada momento de acordo com o uso do usuário
 root.mainloop()
