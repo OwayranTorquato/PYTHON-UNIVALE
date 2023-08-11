@@ -34,7 +34,7 @@ def calcular():
     else:
         messagebox.showerror("Erro", "Operação inválida")
 
-# Configuração da interface gráfica
+# Configuração da interface gráfica, sendo 'root' utilizado para nomear uma instancia principal
 root = tk.Tk()
 root.title("Calculadora")
 
