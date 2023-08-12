@@ -101,7 +101,6 @@ b_ponto.place(x=118,y=208)
 b_result = Button(frame_body, command= calcular,text = "=", width=5, height=2, bg=color5, fg=color2,font=("Ivy 13 bold"),relief=RAISED,overrelief=RIDGE)
 b_result.place(x=177,y=208)
 
-
-
-#permitir loop mdos eventos dentro da calculadora
+#permitir loop dos eventos dentro da calculadora
 janela.mainloop()
+
