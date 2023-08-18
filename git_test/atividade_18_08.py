@@ -10,7 +10,7 @@ def inseriridade():
     
 
 root = tk.Tk()
-root.title("Calculadora")
+root.title("Verificar Idade")
 
 label_idade = tk.Label(root,text="Digite a sua idade: ")
 label_idade.pack()
