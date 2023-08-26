@@ -1,6 +1,7 @@
 import tkinter as tk
 
 
+
 def inseriridade():
      idade=int(entry_idade.get())
      if idade >= 18:
