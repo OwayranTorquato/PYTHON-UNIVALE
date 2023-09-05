@@ -10,5 +10,7 @@ def listagem():
 
     print(f'A soma dos números é {soma_numeros}')
     print("Números inseridos: ",numeros)
+
 if __name__=="__main__":
     listagem()
+
