@@ -1,3 +1,4 @@
+# CÓDIGO DESENVOLVIDO PELO ALUNO OWAYRAN
 #Importando as bibliotecas necessárias.
 from tkinter import *
 from tkinter import ttk
@@ -23,7 +24,7 @@ def exibir_mensagem():
     else:
         messagebox.showerror("Erro", "Por favor, insira um nome e uma mensagem!")
 
-# Configurando a janela
+# Configurando a janela e definindo cores.
 window = tk.Tk()
 window.title("Mensagem")
 window.geometry('250x150')
