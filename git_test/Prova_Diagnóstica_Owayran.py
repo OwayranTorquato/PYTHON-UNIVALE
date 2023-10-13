@@ -30,26 +30,29 @@ window.title("Mensagem")
 window.geometry('250x150')
 color1 = '#2d404a' #cinza escuro
 color2 = '#fcfcfc' #branco
-window.config(bg=color1)
+
 
 # Configurando a entrada das informações referentes ao nome.
-name_label = tk.Label(window, text="Nome", font="Ivy 12 ", bg=color1, fg=color2)
+name_label = tk.Label(window, text="Nome")
 name_label.pack()
 name_entry = tk.Entry(window)
 name_entry.pack()
 
 # Configurando a entrada das informações referentes à mensagem.
-message_label = tk.Label(window, text='Mensagem', font="Ivy 12 ", bg=color1, fg=color2)
+message_label = tk.Label(window, text='Mensagem')
 message_label.pack()
 message_entry = tk.Entry(window)
 message_entry.pack()
 
+
+
 # Configurando o botão de enviar.
-send_button = tk.Button(window, text='Enviar', command=exibir_mensagem, font="Ivy 12 bold", relief="raised", overrelief="ridge", bg=color1, fg=color2)
+send_button = tk.Button(window, text='Enviar', command=exibir_mensagem)
 send_button.pack()
 
 # Configurando a mensagem que será exibida para aguardar o usuário inserir dados.
-waiting_message = tk.Label(window, text="Aguardando o envio da mensagem", font="Ivy 12", bg=color1, fg=color2)
+waiting_message = tk.Label(window, text="Aguardando o envio da mensagem")
 waiting_message.pack()
 
 window.mainloop()
+ 

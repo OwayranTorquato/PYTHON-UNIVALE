@@ -103,4 +103,3 @@ b_result.place(x=177,y=208)
 
 #permitir loop dos eventos dentro da calculadora
 janela.mainloop()
-
